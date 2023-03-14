@@ -1,2 +1,2 @@
-# bf2042-portal-navigation-helper-plugin
+# Navigation Helper Plugin
 This plugin adds some navigation helpers to the portal rules editor
