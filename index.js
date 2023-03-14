@@ -1,7 +1,6 @@
 (function () {
   const pluginId = "bf2042-portal-navigation-plugin";
   const plugin = BF2042Portal.Plugins.getPlugin(pluginId);
-  let initialized = false;
 
   const toggleScrollItem = {
     displayText: "Toggle Scroll Workspace",
