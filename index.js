@@ -9,9 +9,8 @@
       .options.moveOptions.wheel;
     pluginData.scrollableWorkspace = _Blockly.getMainWorkspace().options.moveOptions.wheel;
     logInfo(
-      "Scrollable Workspace set to " + pluginData.scrollableWorkspace
-        ? "TRUE"
-        : "FALSE"
+      "Scrollable Workspace set to " +
+        (pluginData.scrollableWorkspace === true ? "TRUE" : "FALSE")
     );
     try {
       BF2042Portal.Shared.saveToLocalStorage(pluginId, pluginData);
