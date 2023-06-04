@@ -26,7 +26,7 @@
     callback: toggleScrollableWorkspace,
     scopeType: _Blockly.ContextMenuRegistry.ScopeType.WORKSPACE,
     id: "toggleScrollItem",
-    weight: 200,
+    weight: 99,
   };
 
   plugin.initializeWorkspace = function () {
