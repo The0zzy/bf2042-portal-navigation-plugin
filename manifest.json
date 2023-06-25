@@ -1,9 +1,9 @@
 {
-    "id": "bf2042-portal-navigation-plugin",
-    "name": "Navigation Helper Plugin",
-    "version": "1.0.0",
-    "homepage": "https://the0zzy.github.io/bf2042-portal-navigation-plugin/",
-    "description": "Extends the navigation features of the rules editor",
-    "author": "TheOzzy",
-    "main": "index.js"
+  "id": "bf2042-portal-navigation-plugin",
+  "name": "Navigation Helper Plugin",
+  "version": "1.1.0",
+  "homepage": "https://the0zzy.github.io/bf2042-portal-navigation-plugin/",
+  "description": "Extends the navigation features of the rules editor",
+  "author": "TheOzzy",
+  "main": "index.js"
 }
