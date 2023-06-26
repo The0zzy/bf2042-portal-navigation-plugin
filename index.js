@@ -137,6 +137,16 @@
     block.select();
   }
 
+  function changeListener(changeEvent) {
+    if (
+      changeEvent.type === _Blockly.Events.BLOCK_CHANGE ||
+      changeEvent.type === _Blockly.Events.BLOCK_CREATE ||
+      changeEvent.type === _Blockly.Events.BLOCK_DELETE
+    ) {
+      buildJumpToMenu();
+    }
+  }
+
   const toggleScrollItem = {
     displayText: "Toggle Scroll Workspace",
     preconditionFn: () => "enabled",
@@ -164,6 +174,8 @@
       }
       _Blockly.ContextMenuRegistry.registry.register(toggleScrollItem);
       buildJumpToMenu();
+      _Blockly.getMainWorkspace().removeChangeListener(changeListener);
+      _Blockly.getMainWorkspace().addChangeListener(changeListener);
       logInfo("Initialized!");
     } catch (exception) {
       logError("Failed to initialize!", exception);
